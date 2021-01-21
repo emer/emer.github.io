@@ -1,37 +1,21 @@
-## Welcome to GitHub Pages
+*emergent* provides a toolkit / framework for implementing neural network models, written in [Go](https://golang.org), with an optional Python interface that is automatically generated from the Go code.  See the [github](https://github.com/emer/emergent) site for all the code and extensive documentation.
 
-You can use the [editor on GitHub](https://github.com/emer/emer.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+The primary application of *emergent* is for the biologically-based *Leabra* algorithm, which simulates point neuron equations with either rate-code or spiking activations, and a biologically-based form of error-backpropagation based on bidirectional excitatory projections.  This more complex, many-state-variable model is not well-supported by existing backpropagation-oriented tools such as PyTorch or TensorFlow, which operate fundamentally on simple tensors of floating-point numbers.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+A primary goal of *emergent* is to provide effective GUI interfaces that make it easier to understand the functioning of complex neural models, including an interactive 3D NetView, interactive 2D line and bar plots, heat-map grids of tensors, and tables of data.  The [eTorch](https://github.com/emer/etorch) repository provides these interactive GUI elements for PyTorch-based models.
 
-### Markdown
+Most existing Python-based simulation systems rely on C / C++ for the high-performance back-end computation, accessed via the higher-level but much slower Python wrapper language.  Go provides an attractive alternative language framework, featuring the runtime speed of complied C code, but a very rapid compilation speed approaching that of interpreted languages like Python (just a few seconds per compile / run iteration).  Furthermore, the language is very elegant and well-designed, with an extensive standard library, resulting in a high-level of programmer productivity.  The garbage-collection runtime system eliminates a huge amount of complexity and headache, and has essentially no noticible effect on running simulations which do not typically allocate much memory once they have started.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# Documentation
 
-```markdown
-Syntax highlighted code block
+* [github wiki](https://github.com/emer/emergent/wiki) has the main framework-level documentation.
 
-# Header 1
-## Header 2
-### Header 3
+* [leabra repository](https://github.com/emer/leabra) documents the *Leabra* algorithm.
 
-- Bulleted
-- List
+* [CompCogNeuro](https://CompCogNeuro.org) is a free online textbook for *Computational Cognitive Neuroscience* modeling, with associated [simulations](https://github.com/CompCogNeuro/sims) based on the *emergent* system.
 
-1. Numbered
-2. List
+# Videos
 
-**Bold** and _Italic_ and `Code` text
+* Demo videos coming soon!
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/emer/emer.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+* [CompCogNeuro Lecture Videos](https://www.youtube.com/playlist?list=PLu02O8xRZn7xtNx03Rlq6xMRdYcQgEpar) feature interactive demonstrations of *emergent* models.
