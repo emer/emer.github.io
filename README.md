@@ -1,3 +1,3 @@
-# emer.github.io
+# Emergent website
 
-This is the EmerSim.org website: https://EmerSim.org
+This is the Emergent website: https://emersim.org
