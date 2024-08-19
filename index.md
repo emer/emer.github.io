@@ -12,7 +12,7 @@ Most existing Python-based simulation systems rely on C / C++ for the high-perfo
 
 * [leabra repository](https://github.com/emer/leabra) documents the *Leabra* algorithm.
 
-* [CompCogNeuro](https://CompCogNeuro.org) is a free online textbook for *Computational Cognitive Neuroscience* modeling, with associated [simulations](https://github.com/CompCogNeuro/sims) based on the *emergent* system.
+* [CompCogNeuro](https://compcogneuro.org) is a free online textbook for *Computational Cognitive Neuroscience* modeling, with associated [simulations](https://github.com/CompCogNeuro/sims) based on the *emergent* system.
 
 # Videos
 
